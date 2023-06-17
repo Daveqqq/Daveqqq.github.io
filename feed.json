@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "SMBH0le",
+    "subtitle": "hello.",
+    "icon": "http://yoursite.com/images/favicon.ico",
+    "description": "网络安全&杂七杂八",
+    "home_page_url": "http://yoursite.com",
+    "items": [
+        {
+            "id": "http://yoursite.com/zaqizaba/heweishutou/",
+            "url": "http://yoursite.com/zaqizaba/heweishutou/",
+            "title": "社会观察   何为鼠头?何为鸭脖?",
+            "date_published": "2023-06-17T17:25:00.000Z",
+            "content_html": "<p><a href=\"https://imgse.com/i/pClJHe0\"><img data-src=\"https://s1.ax1x.com/2023/06/18/pClJHe0.jpg\" alt=\"pClJHe0.jpg\" /></a></p>\n<h3 id=\"何为鼠头何为鸭脖\"><a class=\"anchor\" href=\"#何为鼠头何为鸭脖\">#</a> 何为鼠头？何为鸭脖？</h3>\n<p>对于语言学，能指指涉所指，也就是鼠头的声音指涉鼠头这个概念，而鼠头这个能指是可以在强力的话语下 (大他者) 指涉到任何的所指上，举个不恰当的例子：就像呵呵，这个能指本身是一个哈哈的概念，而后面变化成为了一种轻蔑的概念。所以鼠头可以在大他者主人能指下指涉为鸭脖的，就是我们可以看到当事人学生亲自确认其为鸭脖，和某监管局的详细调查下确认其为鸭脖.</p>\n<p>但是问题是我们是见过鼠头的人，我们知道老鼠有胡须有眼窝，有牙齿，总的来说是身为一个主体，** 我知道什么是鼠头，** 即为老鼠是什么是我来判断的。而这和前期官方解释相悖，这不恰恰是大他者的不存在的很好例证吗？</p>\n<p>对于拉康的理论，问题的关键是这个<strong>主人能指是空洞的</strong>，为何其为空洞的呢？因为主人能指不指向任何所指，只是作为一个统摄性作用，即为：我说是什么就是什么！是纯粹的暴力，自己以它自己为根据，其为空洞意味着大他者并不存在。而这个空洞的主人能指是<strong> struggle</strong> 的产物，是<strong> struggle</strong> 赋予其意义.</p>\n<p>对应于这次事件也就是，就算是当事人亲口说是鸭脖，监管部门确认是鸭脖，<strong> 但是</strong>我身为一个主体，** 我认识什么是鼠头！** 也就是通过 struggle 来确定鼠头这个能指到底指涉什么，这个判断对于一个可以辨别鼠头的人 (身为主体的人) 来说，其实并不是通过最后的通报来确定的，而是其自身就有辨别的能力。认识到了主人话语的空洞.</p>\n<p>也就是说最后通报是什么，动物学教授又说了什么还重要吗？</p>\n<p>这件事情最最令人吊诡的是，就算是如此显而易见的事情，竟然还想要通过自己监管部门的符号歪曲成为鸭脖？</p>\n<p>这里我想到了一句很经典笑话:<strong> 认为自己真的是国王 (国王这个符号) 的国王是个疯子.</strong></p>\n<p>(也就是国王无法意识到是臣民相信你是国王，你才是一个国王.) 这里我再为这个笑话补充一句:<strong> 作为一个人认为国王真的是国王 (国王这个符号) 的人是个傻子.</strong>(也就是身为人意识不到主人话语是可以<strong> struggle</strong> 的.)</p>\n",
+            "tags": [
+                "杂七杂八",
+                "哲学",
+                "社会观察",
+                "拉康",
+                "齐泽克"
+            ]
+        },
+        {
+            "id": "http://yoursite.com/zaqizaba/Kali2021ChangeSource/",
+            "url": "http://yoursite.com/zaqizaba/Kali2021ChangeSource/",
+            "title": "Kali 2021 修改&更新源",
+            "date_published": "2021-09-26T07:08:00.000Z",
+            "content_html": "<h3 id=\"0x01-修改源文件\"><a class=\"anchor\" href=\"#0x01-修改源文件\">#</a> 0x01 修改源文件</h3>\n<p>将 kali 官方源更换为国内源<br />\n终端输入。</p>\n<figure class=\"highlight yml\"><figcaption data-lang=\"YAML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>sudo gedit /etc/apt/sources.list</pre></td></tr></table></figure><p>输入密码 root 密码<br />\n将原来的内容用 #注释掉，再输入</p>\n<figure class=\"highlight yml\"><figcaption data-lang=\"YAML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">#中科大</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>deb http<span class=\"token punctuation\">:</span>//mirrors.ustc.edu.cn/kali kali<span class=\"token punctuation\">-</span>rolling main non<span class=\"token punctuation\">-</span>free contrib</pre></td></tr><tr><td data-num=\"3\"></td><td><pre>deb<span class=\"token punctuation\">-</span>src http<span class=\"token punctuation\">:</span>//mirrors.ustc.edu.cn/kali kali<span class=\"token punctuation\">-</span>rolling main non<span class=\"token punctuation\">-</span>free contrib</pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\">#阿里云</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>deb http<span class=\"token punctuation\">:</span>//mirrors.aliyun.com/kali kali<span class=\"token punctuation\">-</span>rolling main non<span class=\"token punctuation\">-</span>free contrib</pre></td></tr><tr><td data-num=\"6\"></td><td><pre>deb<span class=\"token punctuation\">-</span>src http<span class=\"token punctuation\">:</span>//mirrors.aliyun.com/kali kali<span class=\"token punctuation\">-</span>rolling main non<span class=\"token punctuation\">-</span>free contrib</pre></td></tr></table></figure><p>保存完毕即可</p>\n<h3 id=\"0x02-更新源\"><a class=\"anchor\" href=\"#0x02-更新源\">#</a> 0x02 更新源</h3>\n<p>获取更新 &amp;&amp; 更新系统 &amp;&amp; 卸载无用软件 &amp;&amp; 重启系统<br />\n输入命令后回车 等待系统重启</p>\n<figure class=\"highlight yml\"><figcaption data-lang=\"YAML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>sudo apt<span class=\"token punctuation\">-</span>get update <span class=\"token important\">&amp;&amp;</span> sudo apt<span class=\"token punctuation\">-</span>get dist<span class=\"token punctuation\">-</span>upgrade <span class=\"token punctuation\">-</span>y <span class=\"token important\">&amp;&amp;</span> sudo apt<span class=\"token punctuation\">-</span>get autoremove <span class=\"token punctuation\">-</span>y <span class=\"token important\">&amp;&amp;</span> reboot</pre></td></tr></table></figure><p>安装过程可能会弹窗，都选默认<br />\n系统安装完毕就为最新的 kali<br />\n<img data-src=\"https://i.loli.net/2021/09/26/nYzIqdju23AGFT7.png\" alt=\"\" /></p>\n",
+            "tags": [
+                "杂七杂八",
+                "Kali",
+                "教程"
+            ]
+        }
+    ]
+}
