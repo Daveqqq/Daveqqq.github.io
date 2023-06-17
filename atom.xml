@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://yoursite.com</id>
+    <id>http://daveqqq.github.io</id>
     <title>SMBH0le</title>
     <subtitle>hello.</subtitle>
-    <icon>http://yoursite.com/images/favicon.ico</icon>
-    <link href="http://yoursite.com" />
+    <icon>http://daveqqq.github.io/images/favicon.ico</icon>
+    <link href="http://daveqqq.github.io" />
     <author>
       <name>SMBH0le</name>
     </author>
@@ -12,9 +12,9 @@
     <category term="关键词1" />
     <category term="关键词2" />
     <entry>
-        <id>http://yoursite.com/zaqizaba/heweishutou/</id>
+        <id>http://daveqqq.github.io/zaqizaba/heweishutou/</id>
         <title>社会观察   何为鼠头?何为鸭脖?</title>
-        <link rel="alternate" href="http://yoursite.com/zaqizaba/heweishutou/"/>
+        <link rel="alternate" href="http://daveqqq.github.io/zaqizaba/heweishutou/"/>
         <content type="html">&lt;p&gt;&lt;a href=&#34;https://imgse.com/i/pClJHe0&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2023/06/18/pClJHe0.jpg&#34; alt=&#34;pClJHe0.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;何为鼠头何为鸭脖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#何为鼠头何为鸭脖&#34;&gt;#&lt;/a&gt; 何为鼠头？何为鸭脖？&lt;/h3&gt;
 &lt;p&gt;对于语言学，能指指涉所指，也就是鼠头的声音指涉鼠头这个概念，而鼠头这个能指是可以在强力的话语下 (大他者) 指涉到任何的所指上，举个不恰当的例子：就像呵呵，这个能指本身是一个哈哈的概念，而后面变化成为了一种轻蔑的概念。所以鼠头可以在大他者主人能指下指涉为鸭脖的，就是我们可以看到当事人学生亲自确认其为鸭脖，和某监管局的详细调查下确认其为鸭脖.&lt;/p&gt;
@@ -26,17 +26,17 @@
 &lt;p&gt;这里我想到了一句很经典笑话:&lt;strong&gt; 认为自己真的是国王 (国王这个符号) 的国王是个疯子.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;(也就是国王无法意识到是臣民相信你是国王，你才是一个国王.) 这里我再为这个笑话补充一句:&lt;strong&gt; 作为一个人认为国王真的是国王 (国王这个符号) 的人是个傻子.&lt;/strong&gt;(也就是身为人意识不到主人话语是可以&lt;strong&gt; struggle&lt;/strong&gt; 的.)&lt;/p&gt;
 </content>
-        <category term="杂七杂八" scheme="http://yoursite.com/categories/zaqizaba/" />
-        <category term="哲学" scheme="http://yoursite.com/tags/%E5%93%B2%E5%AD%A6/" />
-        <category term="社会观察" scheme="http://yoursite.com/tags/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" />
-        <category term="拉康" scheme="http://yoursite.com/tags/%E6%8B%89%E5%BA%B7/" />
-        <category term="齐泽克" scheme="http://yoursite.com/tags/%E9%BD%90%E6%B3%BD%E5%85%8B/" />
+        <category term="杂七杂八" scheme="http://daveqqq.github.io/categories/zaqizaba/" />
+        <category term="哲学" scheme="http://daveqqq.github.io/tags/%E5%93%B2%E5%AD%A6/" />
+        <category term="社会观察" scheme="http://daveqqq.github.io/tags/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" />
+        <category term="拉康" scheme="http://daveqqq.github.io/tags/%E6%8B%89%E5%BA%B7/" />
+        <category term="齐泽克" scheme="http://daveqqq.github.io/tags/%E9%BD%90%E6%B3%BD%E5%85%8B/" />
         <updated>2023-06-17T17:25:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://yoursite.com/zaqizaba/Kali2021ChangeSource/</id>
+        <id>http://daveqqq.github.io/zaqizaba/Kali2021ChangeSource/</id>
         <title>Kali 2021 修改&amp;更新源</title>
-        <link rel="alternate" href="http://yoursite.com/zaqizaba/Kali2021ChangeSource/"/>
+        <link rel="alternate" href="http://daveqqq.github.io/zaqizaba/Kali2021ChangeSource/"/>
         <content type="html">&lt;h3 id=&#34;0x01-修改源文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#0x01-修改源文件&#34;&gt;#&lt;/a&gt; 0x01 修改源文件&lt;/h3&gt;
 &lt;p&gt;将 kali 官方源更换为国内源&lt;br /&gt;
 终端输入。&lt;/p&gt;
@@ -50,9 +50,9 @@
 系统安装完毕就为最新的 kali&lt;br /&gt;
 &lt;img data-src=&#34;https://i.loli.net/2021/09/26/nYzIqdju23AGFT7.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
-        <category term="杂七杂八" scheme="http://yoursite.com/categories/zaqizaba/" />
-        <category term="Kali" scheme="http://yoursite.com/tags/Kali/" />
-        <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="杂七杂八" scheme="http://daveqqq.github.io/categories/zaqizaba/" />
+        <category term="Kali" scheme="http://daveqqq.github.io/tags/Kali/" />
+        <category term="教程" scheme="http://daveqqq.github.io/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2021-09-26T07:08:00.000Z</updated>
     </entry>
 </feed>

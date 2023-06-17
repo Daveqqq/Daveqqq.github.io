@@ -3,8 +3,8 @@
     <channel>
         <title>SMBH0le</title>
         <subtitle>hello.</subtitle>
-        <icon>http://yoursite.com/images/favicon.ico</icon>
-        <link>http://yoursite.com</link>
+        <icon>http://daveqqq.github.io/images/favicon.ico</icon>
+        <link>http://daveqqq.github.io</link>
         <author>
           <name>SMBH0le</name>
         </author>
@@ -15,14 +15,14 @@
         <category term="关键词1" />
         <category term="关键词2" />
         <item>
-            <guid isPermalink="true">http://yoursite.com/zaqizaba/heweishutou/</guid>
+            <guid isPermalink="true">http://daveqqq.github.io/zaqizaba/heweishutou/</guid>
             <title>社会观察   何为鼠头?何为鸭脖?</title>
-            <link>http://yoursite.com/zaqizaba/heweishutou/</link>
-            <category term="杂七杂八" scheme="http://yoursite.com/categories/zaqizaba/" />
-            <category term="哲学" scheme="http://yoursite.com/tags/%E5%93%B2%E5%AD%A6/" />
-            <category term="社会观察" scheme="http://yoursite.com/tags/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" />
-            <category term="拉康" scheme="http://yoursite.com/tags/%E6%8B%89%E5%BA%B7/" />
-            <category term="齐泽克" scheme="http://yoursite.com/tags/%E9%BD%90%E6%B3%BD%E5%85%8B/" />
+            <link>http://daveqqq.github.io/zaqizaba/heweishutou/</link>
+            <category term="杂七杂八" scheme="http://daveqqq.github.io/categories/zaqizaba/" />
+            <category term="哲学" scheme="http://daveqqq.github.io/tags/%E5%93%B2%E5%AD%A6/" />
+            <category term="社会观察" scheme="http://daveqqq.github.io/tags/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" />
+            <category term="拉康" scheme="http://daveqqq.github.io/tags/%E6%8B%89%E5%BA%B7/" />
+            <category term="齐泽克" scheme="http://daveqqq.github.io/tags/%E9%BD%90%E6%B3%BD%E5%85%8B/" />
             <pubDate>Sun, 18 Jun 2023 01:25:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://imgse.com/i/pClJHe0&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2023/06/18/pClJHe0.jpg&#34; alt=&#34;pClJHe0.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;何为鼠头何为鸭脖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#何为鼠头何为鸭脖&#34;&gt;#&lt;/a&gt; 何为鼠头？何为鸭脖？&lt;/h3&gt;
@@ -37,12 +37,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://yoursite.com/zaqizaba/Kali2021ChangeSource/</guid>
+            <guid isPermalink="true">http://daveqqq.github.io/zaqizaba/Kali2021ChangeSource/</guid>
             <title>Kali 2021 修改&amp;更新源</title>
-            <link>http://yoursite.com/zaqizaba/Kali2021ChangeSource/</link>
-            <category term="杂七杂八" scheme="http://yoursite.com/categories/zaqizaba/" />
-            <category term="Kali" scheme="http://yoursite.com/tags/Kali/" />
-            <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/" />
+            <link>http://daveqqq.github.io/zaqizaba/Kali2021ChangeSource/</link>
+            <category term="杂七杂八" scheme="http://daveqqq.github.io/categories/zaqizaba/" />
+            <category term="Kali" scheme="http://daveqqq.github.io/tags/Kali/" />
+            <category term="教程" scheme="http://daveqqq.github.io/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Sun, 26 Sep 2021 15:08:00 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;0x01-修改源文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#0x01-修改源文件&#34;&gt;#&lt;/a&gt; 0x01 修改源文件&lt;/h3&gt;
 &lt;p&gt;将 kali 官方源更换为国内源&lt;br /&gt;
